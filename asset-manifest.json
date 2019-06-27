@@ -1,5 +1,5 @@
 {
-  "main.css": "/vk-apps-constructor/static/css/main.5a5f405f.chunk.css",
+  "main.css": "/vk-apps-constructor/static/css/main.5a2006da.chunk.css",
   "main.js": "/vk-apps-constructor/static/js/main.07329770.chunk.js",
   "main.js.map": "/vk-apps-constructor/static/js/main.07329770.chunk.js.map",
   "runtime~main.js": "/vk-apps-constructor/static/js/runtime~main.eabfb822.js",
@@ -8,10 +8,10 @@
   "static/js/2.00333e35.chunk.js": "/vk-apps-constructor/static/js/2.00333e35.chunk.js",
   "static/js/2.00333e35.chunk.js.map": "/vk-apps-constructor/static/js/2.00333e35.chunk.js.map",
   "index.html": "/vk-apps-constructor/index.html",
-  "precache-manifest.fa9d08d1be08501eb9c90f8de021740e.js": "/vk-apps-constructor/precache-manifest.fa9d08d1be08501eb9c90f8de021740e.js",
+  "precache-manifest.be26f61c7c6aa9c7e53a7b278f1dea45.js": "/vk-apps-constructor/precache-manifest.be26f61c7c6aa9c7e53a7b278f1dea45.js",
   "service-worker.js": "/vk-apps-constructor/service-worker.js",
   "static/css/2.d83faf9b.chunk.css.map": "/vk-apps-constructor/static/css/2.d83faf9b.chunk.css.map",
-  "static/css/main.5a5f405f.chunk.css.map": "/vk-apps-constructor/static/css/main.5a5f405f.chunk.css.map",
+  "static/css/main.5a2006da.chunk.css.map": "/vk-apps-constructor/static/css/main.5a2006da.chunk.css.map",
   "static/media/App.css": "/vk-apps-constructor/static/media/GothaProReg.aafeb237.otf",
   "static/media/persik.png": "/vk-apps-constructor/static/media/persik.4e1ec840.png"
 }
