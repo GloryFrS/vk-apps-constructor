@@ -87,44 +87,23 @@ class App extends React.Component {
 	}
 
 
-
 	render() {
 		if (this.state.loadApp) {
-			let menuItem =
-				<div>
-					<div className="menu-item" onClick={() => { this.chMenu(); this.goForward("Panel1") }}><b>Panel1</b></div>
-					<div className="menu-item" onClick={() => { this.chMenu(); this.goForward("Panel2") }}><b>Panel2</b></div>
-				</div>
+			
 			return (
 				<ConfigProvider>
-					{/* кастамное меню */}
-					<Menu
-						menuItem={menuItem}
-						showMenu={this.state.showMenu}
-					/>
-					{/*  */}
+					
 					<View
 						activePanel={this.state.activePanel}
 						history={this.state.history}
 						onSwipeBack={this.goBack} // для свайпа на iOS
 					>
-						{/* <Home id="home"
-							fetchedUser={this.state.fetchedUser}
-							go={this.go}
-							goForward={this.goForward}
-							chMenu={this.chMenu}
-						/>
-						<Persik id="persik"
-							go={this.go}
-							goBack={this.goBack}
-							goForward={this.goForward}
-						/> */}
+						
 						<Main
 							fetchedUser={this.state.fetchedUser}
 							id="main"
 							goBack={this.goBack}
 							goForward={this.goForward}
-							chMenu={this.chMenu}
 						/>
 						<Panel1
 							fetchedUser={this.state.fetchedUser}

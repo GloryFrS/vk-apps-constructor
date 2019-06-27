@@ -26,6 +26,7 @@ body {
     /* --background_content: #BEE4F7; */
     --font-android: Gotham Pro; /* основные шпифты для все аппы на android */
     --font-ios: Gotham Pro; /* основные шпифты для все аппы на iOS */
+    overflow: hidden!important;
 }
 
 /* Уберает линию после шапки на iOS */
