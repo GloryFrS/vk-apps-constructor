@@ -4,19 +4,11 @@ import connect from '@vkontakte/vkui-connect-mock';
 import vkuiConnect from '@vkontakte/vkui-connect';
 import { View, ConfigProvider } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
-import { Route } from "react-router-dom";
-
-import Home from './panels/js/Home';
-import Persik from './panels/js/Persik';
-
-import Menu from './mod/menu/Menu'; // кастамное меню
-
 import Main from './panels/js/Main';
 import Panel1 from './panels/js/Panel1';
 import Panel2 from './panels/js/Panel2';
 
 import './App.css';
-import menu from '@vkontakte/icons/dist/28/menu';
 
 class App extends React.Component {
 	constructor(props) {
@@ -65,7 +57,7 @@ class App extends React.Component {
 			}
 		});
 		connect.send('VKWebAppGetUserInfo', {});
-		// connect.send("VKWebAppSetViewSettings", { "status_bar_style": "dark", "action_bar_color": "#87C2E7" });
+		connect.send("VKWebAppSetViewSettings", { "status_bar_style": "dark", "action_bar_color": "#3D3D3D" });
 
 	}
 
@@ -104,20 +96,6 @@ class App extends React.Component {
 							id="main"
 							goBack={this.goBack}
 							goForward={this.goForward}
-						/>
-						<Panel1
-							fetchedUser={this.state.fetchedUser}
-							id="Panel1"
-							goBack={this.goBack}
-							goForward={this.goForward}
-							chMenu={this.chMenu}
-						/>
-						<Panel2
-							fetchedUser={this.state.fetchedUser}
-							id="Panel2"
-							goBack={this.goBack}
-							goForward={this.goForward}
-							chMenu={this.chMenu}
 						/>
 					</View>
 				</ConfigProvider>

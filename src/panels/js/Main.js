@@ -1,6 +1,6 @@
 import React from 'react';
 import connect from '@vkontakte/vkui-connect';
-import { Panel, ListItem, Button, Group, Div, Avatar, PanelHeader, PanelHeaderContent, HeaderButton } from '@vkontakte/vkui';
+import { Panel, PanelHeader } from '@vkontakte/vkui';
 
 
 import '../css/Main.css';
@@ -35,10 +35,11 @@ class Main extends React.Component {
 
     render() {
         return (
-            <Panel id={this.props.id}>
-                
-                <div>
-                    <iframe src="https://cosuv.ru/app/3868" style={{ width:"100%",height:"600px",position:"relative"}} frameBorder="0" ></iframe>
+            
+            <Panel id={this.props.id}> 
+            <PanelHeader>Чехол сервис</PanelHeader> 
+                <div className='containerFrame'>
+                    <iframe src="https://cosuv.ru/app/3868" style={{ width:"100%",height:"100%",position:"relative"}} frameBorder="0" ></iframe>
                 </div>
             </Panel>
         );

@@ -20,13 +20,16 @@
 }
 
 body {
-    --header_background: #87C2E7; /* цвет шапки */
-    --header_alternate_background: #87C2E7; /* цвет статус бара на iOS */
-    --background_page: #BEE4F7; /*  */
-    /* --background_content: #BEE4F7; */
-    --font-android: Gotham Pro; /* основные шпифты для все аппы на android */
-    --font-ios: Gotham Pro; /* основные шпифты для все аппы на iOS */
+    --header_background: #3D3D3D;
+    --header_alternate_background: #3D3D3D;
+    --background_page: #3D3D3D;
+    /* --background_content: #3D3D3D; */
+    --font-android: Gotham Pro;
+    --font-ios: Gotham Pro;
     overflow: hidden!important;
+    position: fixed!important;
+    width: 100vw;
+    background: #3D3D3D;
 }
 
 /* Уберает линию после шапки на iOS */
