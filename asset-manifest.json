@@ -1,17 +1,16 @@
 {
-  "main.css": "/vk-apps-constructor/static/css/main.312a5bcf.chunk.css",
-  "main.js": "/vk-apps-constructor/static/js/main.07329770.chunk.js",
-  "main.js.map": "/vk-apps-constructor/static/js/main.07329770.chunk.js.map",
+  "main.css": "/vk-apps-constructor/static/css/main.8475073a.chunk.css",
+  "main.js": "/vk-apps-constructor/static/js/main.8628b05f.chunk.js",
+  "main.js.map": "/vk-apps-constructor/static/js/main.8628b05f.chunk.js.map",
   "runtime~main.js": "/vk-apps-constructor/static/js/runtime~main.eabfb822.js",
   "runtime~main.js.map": "/vk-apps-constructor/static/js/runtime~main.eabfb822.js.map",
   "static/css/2.d83faf9b.chunk.css": "/vk-apps-constructor/static/css/2.d83faf9b.chunk.css",
-  "static/js/2.00333e35.chunk.js": "/vk-apps-constructor/static/js/2.00333e35.chunk.js",
-  "static/js/2.00333e35.chunk.js.map": "/vk-apps-constructor/static/js/2.00333e35.chunk.js.map",
+  "static/js/2.07831f8c.chunk.js": "/vk-apps-constructor/static/js/2.07831f8c.chunk.js",
+  "static/js/2.07831f8c.chunk.js.map": "/vk-apps-constructor/static/js/2.07831f8c.chunk.js.map",
   "index.html": "/vk-apps-constructor/index.html",
-  "precache-manifest.f16175448b3dd92d2fd8c95d1a28803a.js": "/vk-apps-constructor/precache-manifest.f16175448b3dd92d2fd8c95d1a28803a.js",
+  "precache-manifest.450671996efaf5118d0518f305f7e972.js": "/vk-apps-constructor/precache-manifest.450671996efaf5118d0518f305f7e972.js",
   "service-worker.js": "/vk-apps-constructor/service-worker.js",
   "static/css/2.d83faf9b.chunk.css.map": "/vk-apps-constructor/static/css/2.d83faf9b.chunk.css.map",
-  "static/css/main.312a5bcf.chunk.css.map": "/vk-apps-constructor/static/css/main.312a5bcf.chunk.css.map",
-  "static/media/App.css": "/vk-apps-constructor/static/media/GothaProReg.aafeb237.otf",
-  "static/media/persik.png": "/vk-apps-constructor/static/media/persik.4e1ec840.png"
+  "static/css/main.8475073a.chunk.css.map": "/vk-apps-constructor/static/css/main.8475073a.chunk.css.map",
+  "static/media/App.css": "/vk-apps-constructor/static/media/GothaProReg.aafeb237.otf"
 }
