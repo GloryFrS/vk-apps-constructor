@@ -16,23 +16,23 @@ self.__precacheManifest = [
     "url": "/vk-apps-constructor/static/js/runtime~main.eabfb822.js"
   },
   {
-    "revision": "3a50b902b6de42c2fb8b",
-    "url": "/vk-apps-constructor/static/js/main.218cc063.chunk.js"
+    "revision": "bb8d71095cd6041eed20",
+    "url": "/vk-apps-constructor/static/js/main.70e126a9.chunk.js"
   },
   {
-    "revision": "07ef39dad7726856ab43",
-    "url": "/vk-apps-constructor/static/js/2.0ff7fb3d.chunk.js"
+    "revision": "b4cf520c4adfa2b2676f",
+    "url": "/vk-apps-constructor/static/js/2.536a6266.chunk.js"
   },
   {
-    "revision": "3a50b902b6de42c2fb8b",
+    "revision": "bb8d71095cd6041eed20",
     "url": "/vk-apps-constructor/static/css/main.8475073a.chunk.css"
   },
   {
-    "revision": "07ef39dad7726856ab43",
+    "revision": "b4cf520c4adfa2b2676f",
     "url": "/vk-apps-constructor/static/css/2.d83faf9b.chunk.css"
   },
   {
-    "revision": "442d7ba34b9413dd299a80c001086507",
+    "revision": "9fdf8413de3b859f9eca67709d6fbc41",
     "url": "/vk-apps-constructor/index.html"
   }
 ];
