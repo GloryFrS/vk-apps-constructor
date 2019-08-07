@@ -6,5 +6,154 @@
     margin-right: 10px;
 }
 .containerFrame {
-    height: 92vh;  
+    height: calc(100% - 56px);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding-top: 56px; 
+}
+.View--ios .Panel__in .containerFrame {
+  padding-top: 64px;
+  padding-top: calc(44px + var(--safe-area-inset-top));
+  height: calc(100% - 64px);
+  height: calc(100% - (44px + var(--safe-area-inset-top)));
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+.Icon--cancel_circle_outline_16 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #d14c4c;
+}
+
+.container p {
+    color: #eeeeee;
+}
+.container a {
+    color: #d59b18;
+    font-size: 16px;
+}
+.container span {
+    color: #64e7ab;
+}
+.modal {
+  position: absolute;
+  background: #00000091;
+  width: 100%;
+  height: 100%;
+  z-index: 9999!important;
+  top: 0
+}
+.modal-content {
+  background: #fff;
+  color: #000;
+  position: absolute;
+  top: 25%;
+  left: calc(50% - 139px);
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #ffb6b6;
+}
+.modal-content h3 {
+  margin: 0
+}
+/* .info_head {
+    background: #fff;
+    padding: 15px;
+    border: #f5abab 1px solid;
+    color: #515151;
+    height: 5vh;
+}
+.info_head img {
+    width: 50px;
+    background: #000;
+} */
+/* @media(max-width: 680px) {
+    .info_head {
+        height: 8vh; 
+    }
+    .containerFrame {
+        height: 82vh;  
+    }
+}
+@media(max-width: 450px) {
+    .info_head {
+        height: 7vh;
+        font-size: 14px; 
+    }
+    .containerFrame {
+        height: 83vh;  
+    } */
+/* }*/
+.iconInfo { 
+    width: 30px;
+}
+.pulse{
+    -webkit-animation: pulse 1s ease infinite;
+    -moz-animation: pulse 1s ease infinite;
+    -ms-animation: pulse 1s ease infinite;
+    -o-animation: pulse 1s ease infinite;
+    animation: pulse 1s ease infinite;
+}
+
+
+@-webkit-keyframes pulse {
+   0% {
+    -webkit-transform: scale(1);
+     -webkit-animation-timing-function: ease;
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    -webkit-animation-timing-function: ease;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -webkit-animation-timing-function: ease;
+  }
+}
+@-moz-keyframes pulse {
+   0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@-o-keyframes pulse {
+   0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulse {
+   0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

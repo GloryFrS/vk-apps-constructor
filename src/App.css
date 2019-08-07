@@ -26,8 +26,8 @@ body {
     /* --background_content: #3D3D3D; */
     --font-android: Gotham Pro;
     --font-ios: Gotham Pro;
-    overflow: hidden!important;
-    position: fixed!important;
+    /* overflow: hidden!important;
+    position: fixed!important; */
     width: 100vw;
     background: #3D3D3D;
 }
@@ -35,4 +35,13 @@ body {
 /* Уберает линию после шапки на iOS */
 .PanelHeader-bg::after {
     height: 0!important;
+}
+
+.lost-connection {
+    background: #fff;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+    text-align: center;
 }
