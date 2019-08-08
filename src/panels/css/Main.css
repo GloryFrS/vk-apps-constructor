@@ -100,7 +100,9 @@
     -o-animation: pulse 1s ease infinite;
     animation: pulse 1s ease infinite;
 }
-
+.Panel--tm-gray .Panel__in, .Panel--tm-gray:after {
+  background-color: #3d3d3d!important;
+}
 
 @-webkit-keyframes pulse {
    0% {

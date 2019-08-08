@@ -58,7 +58,7 @@ class Main extends React.Component {
                         </HeaderButton>
                     }
                 >
-                    Чехол сервис 
+                    Конструктор чехлов 
                 </PanelHeader>
                 <div className='containerFrame'>
                     { this.props.failPay ? (
