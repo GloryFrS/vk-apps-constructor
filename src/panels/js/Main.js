@@ -4,6 +4,7 @@ import '../css/Main.css';
 import PropTypes from 'prop-types';
 import infoIcon from '../../img/information.svg';
 import ReactSVG from 'react-svg';
+import { ModalInfo, ModalSucPay } from '../../modals/Modals'
 
 class Main extends React.Component {
 
@@ -13,7 +14,8 @@ class Main extends React.Component {
             loading: true,
             modal: false,
             sum: null,
-            order_id: null
+            order_id: null,
+            isOpen: false
         }
         
     }
@@ -38,7 +40,10 @@ class Main extends React.Component {
     hideSpinner = () => {
         setTimeout(() => { this.setState({ loading: false }); }, 200);
     };
-
+    handleModalInfo = (e) => {
+        e.preventDefault();
+        this.setState({isOpen: !this.state.isOpen});
+    }
     
 
     render() {
@@ -54,13 +59,22 @@ class Main extends React.Component {
                                     svg.setAttribute('style', 'width: 25px; height:25px; margin-bottom: -5px;')
                                 }}
                                 src={infoIcon}
-                                onClick={() => { this.props.chMenu()  ; this.props.goForward("Panel1") }} />
+                                onClick={(e)=> this.handleModalInfo(e)} />
                         </HeaderButton>
                     }
                 >
                     Конструктор чехлов 
                 </PanelHeader>
                 <div className='containerFrame'>
+                    <ModalInfo 
+                        isOpen={this.state.isOpen}
+                        toggle={this.handleModalInfo}
+
+                    />
+                    <ModalSucPay 
+                        status={this.props.status}
+                        handleModal={this.props.handleSuccessModal}
+                    />
                     { this.props.failPay ? (
                         <div className='modal'>
                             <div className='modal-content'>

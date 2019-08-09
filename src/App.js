@@ -24,7 +24,8 @@ class App extends React.Component {
 			order_id: '',
 			krada: '',
 			failPay: false,
-			desktop_web: false
+			desktop_web: false,
+			status: false
 		};
 		this.payOrder = this.payOrder.bind(this);
 		this.handleModal = this.handleModal.bind(this);
@@ -88,7 +89,7 @@ class App extends React.Component {
 					const sumVk = desktop_web ? e.detail.data.amount : e.detail.data.result.amount;
 					 
 					if(status) {
-						this.setState({ failPay: false });
+						this.setState({ failPay: false, status: true});
 						const params = new URLSearchParams();
 						params.append('id',             fetchedUser.id);
 						params.append('order_id',       order_id);
@@ -141,7 +142,11 @@ class App extends React.Component {
 
 	handleModal = (e) => {
 		e.preventDefault();
-        this.setState({ failPay: false });
+		this.setState({ failPay: false });
+	}
+	handleSuccessModal = (e) => {
+		e.preventDefault();
+		this.setState({ status: false });
     }
 
 	// метод добавления перехода из истории аппы
@@ -237,7 +242,9 @@ class App extends React.Component {
 									goForward={this.goForward}
 									chMenu={this.chMenu}
 									failPay={this.state.failPay}
+									status={this.state.status}
 									handleModal={this.handleModal}
+									handleSuccessModal={this.handleSuccessModal}
 								/>
 								<Panel1
 									fetchedUser={this.state.fetchedUser}
