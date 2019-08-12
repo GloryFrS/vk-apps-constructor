@@ -1,10 +1,14 @@
 import React from 'react';
-import { Panel, PanelHeader, HeaderButton, ScreenSpinner, Button } from '@vkontakte/vkui';
+import { Panel, PanelHeader, HeaderButton, ScreenSpinner, Button, platform } from '@vkontakte/vkui';
 import '../css/Main.css';
 import PropTypes from 'prop-types';
 import infoIcon from '../../img/information.svg';
 import ReactSVG from 'react-svg';
-import { ModalInfo, ModalSucPay } from '../../modals/Modals'
+import { ModalInfo, ModalSucPay } from '../../modals/Modals';
+import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
+import Icon24Back from '@vkontakte/icons/dist/24/back';
+
+const osname = platform();
 
 class Main extends React.Component {
 
@@ -49,21 +53,23 @@ class Main extends React.Component {
     render() {
         const { sum, order_id } = this.state;
         const { payOrder, handleModal } = this.props;
+        const IconBack = osname === "ios" ? <Icon28ChevronBack onClick={(e)=> this.handleModalInfo(e)}/> : <Icon24Back onClick={(e)=> this.handleModalInfo(e)}/>
         return (         
             <Panel id={this.props.id}> 
                 <PanelHeader
                     left={
                         <HeaderButton>
-                            <ReactSVG beforeInjection={svg => {
+                            {this.state.isOpen ? IconBack : <ReactSVG beforeInjection={svg => {
                                     svg.classList.add('pulse')
                                     svg.setAttribute('style', 'width: 25px; height:25px; margin-bottom: -5px;')
                                 }}
                                 src={infoIcon}
-                                onClick={(e)=> this.handleModalInfo(e)} />
+                                onClick={(e)=> this.handleModalInfo(e)} />}
+                            
                         </HeaderButton>
                     }
                 >
-                    Конструктор чехлов 
+                    Конструктор
                 </PanelHeader>
                 <div className='containerFrame'>
                     <ModalInfo 
